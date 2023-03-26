@@ -1,0 +1,72 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wideth=device-width"/>
+	<title>Email Subscription</title>
+    <link rel="stylesheet" href="css/register_styles.css">
+    <link rel="stylesheet" href="css/generic_styles.css">
+</head>
+<body>
+	<header>
+        <a href="index.html"><img class="header_parts header_logo" alt="A displeased-looking hippo emerging from a muddy river" src="img/catherine-merlin--kbm8KO32Xg-unsplash.jpg"></a>
+        <h1 class="header_parts">Incredibly Cool Hippos</h1>			
+    </header>
+		<nav class="nav">
+			<ul class="nav_menu">
+				<li class="nav_item"><a href="index.html">Home</a>
+					<ul>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="activities.html">Activities</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</li>
+				<li class="nav_item"><a href="about.html">About</a>
+					<ul>
+						<li><a href="about_us.html">About Us</a></li>
+						<li><a href="contact_us.html">Contact Us</a></li>
+						<li><a href="locations.html">Locations</a></li>
+					</ul>
+				</li>
+				<li class="nav_item"><a href="register.html">Register</a>
+					<ul>
+						<li><a href="subscription.html">Subscription</a></li>
+						<li><a href="donate.html">Donate</a></li>
+						<li><a href="adopt.html">Adopt</a></li>
+						</ul>
+					</li>
+			</ul>
+	</nav>
+	<main>
+		<h2>Email Subscription</h2>	
+		<form action="/register" method="POST">
+			<label for="name" class="name_label">Name:</label>
+			<input type="text" id="name" name="name" class="name_field" required placeholder="Enter your name is required"><br>
+
+			<label for="email" class="email_label">Email:</label>
+			<input type="text" id="email" name="email" class="email_field" required placeholder="Enter your email is required"><br>
+
+			<label for="age" class="age_label">Age:</label>
+			<input type="number" id="age" name="age" class="age_field" required placeholder="Enter your age is required"><br>
+
+			<label for="platform" class="platform_label">How do you learn about us?</label>
+			<select class="platform_field" id="platform" name="platform">
+				<option value="" disabled selected>Select an option</option>
+				<option value="website">Website</option>
+				<option value="newspaper">Newspaper</option>
+				<option value="facebook">Facebook</option>
+				<option value="twitter">Twitter</option>
+			</select><br>
+
+			<label for="subscription" class="subscription_label"><span>Do you want us to send you cool images of hippos?</span></label>
+			<input type="checkbox" id="subscription" name="subscription" class="subscription_field" checked>
+
+			<input type="submit" value="Submit"  class="submit-button">
+		</form>
+	</main>
+	<footer>
+		<p class="footer_link">&copy; 2023 Cool Hippos <a href="privacy.html">Privacy Policy</a></p>
+	</footer>
+</body>
+</html>

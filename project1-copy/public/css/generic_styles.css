@@ -1,0 +1,133 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* header */
+header {
+    grid-area: header;
+    background-color: rgb(137, 102, 56); 
+    color:white;
+    padding: 1rem;
+    margin: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    width: 10rem;
+    height: 6rem;
+}
+
+.header_parts {
+    display: inline;
+    vertical-align:middle;
+    padding-right: 5rem;
+}
+
+/* nav */
+nav {
+    grid-area: nav;
+    background-color: whitesmoke;
+}
+  
+.nav_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+  margin:0;
+  line-height:1.6rem;
+  list-style:none;
+  font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(137, 102, 56);
+  }
+  
+  nav a:hover {
+    background-color: white;
+  }
+  
+  nav ul ul {
+    display: block;
+    position: absolute;
+    max-height: 0rem;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+    align-items: center;
+    transition: max-height 20ms;
+  }
+  
+  nav li:hover > ul {
+      max-height: 30rem;
+  }
+  
+  nav ul li {
+    width: 100%;
+    display: block;
+  } 
+  
+  nav li:hover {
+    background-color: #928e8e;
+  }
+
+  h2 {
+    color:rgb(137, 102, 56);
+    padding: 0 1rem;
+    font-size: 2rem;
+  }
+
+/* main */
+main {
+    grid-area: main;
+    background-color: #ddd;
+}
+
+/* foorter */
+footer {
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: rgb(137, 102, 56);
+    color:white;
+  }
+  
+.footer_link {
+    grid-column: span 12;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+  border-radius: 40%;
+}

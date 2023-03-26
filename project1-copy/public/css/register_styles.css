@@ -1,0 +1,156 @@
+main {
+  grid-area: main;
+}
+
+form {
+  display: grid;
+  grid-template-areas: 
+  "name_label name_field"
+  "email_label email_field"
+  "age_label age_field"
+  "platform_label platform_field"
+  "subscription_label subscription_field"
+  "submit submit"
+  ;
+
+  font-size: 1.5rem;
+
+  padding: 1rem;
+  color: black;
+}
+
+input {
+  margin: 1rem;
+}
+
+.name_label {
+  grid-area: name_label;
+  color:rgb(137, 102, 56);
+}
+
+.name_field {
+  grid-area: name_field;
+}
+
+.email_label {
+  grid-area: email_label;
+  color:rgb(137, 102, 56);
+}
+
+.email_field {
+  grid-area: email_field;
+}
+
+.age_label {
+  grid-area: age_label;
+  color:rgb(137, 102, 56);
+}
+
+.age_field {
+  grid-area: age_field;
+}
+
+.platform_label {
+  grid-area: platform_label;
+  color:rgb(137, 102, 56);
+}
+
+.platform_field {
+  grid-area: platform_field;
+}
+
+.subscription_label {
+  grid-area: subscription_label;
+  color:rgb(137, 102, 56);
+}
+
+.subscription_field {
+  grid-area: subscription_field;
+}
+
+.checkbox_field {
+  grid-area: checkbox_field;
+}
+
+.checkbox_label {
+  grid-area: checkbox_label;
+  color:rgb(137, 102, 56);
+}
+
+.submit_field {
+  grid-area: submit_field;
+}
+
+.submit_field {
+  grid-area: submit_field;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 3rem;
+  width: 20rem;
+}
+
+select {
+  height: 3rem;
+  width: 20rem;
+  margin: 1rem;
+}
+
+form input
+form select {
+  width: 10rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+form label:after {
+  content: "*";
+  color: red;
+  margin-left: 0.1rem;
+}
+
+.buttom {
+  margin-top: 10rem;
+  width: 5rem;
+}
+
+form label:after {
+  content: "*";
+  color: red;
+  margin-left: 0.1rem;
+}
+
+@media (max-width: 50rem) {
+  form {
+    display: grid;
+    grid-template-areas: 
+    "name_label"
+    "name_field"
+    "email_label" 
+    "email_field"
+    "age_label" 
+    "age_field"
+    "platform_label" 
+    "platform_field"
+    "subscription_label" 
+    "subscription_field"
+    "checkbox_label" 
+    "checkbox_field"
+    "submit" 
+    "submit";
+    padding: 1rem;
+    color: black;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
